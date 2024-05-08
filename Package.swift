@@ -9,8 +9,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MMKV",
-            url: "https://github.com/Kyle-Ye/MMKV/releases/download/v1.3.0/MMKV.xcframework.zip",
-            checksum: "037627e106ae892e2a16b756f5e63c061899d3aa22c933cb74b1fb3390bf4d0a"
+            url: "https://github.com/Kyle-Ye/MMKV/releases/download/v1.3.5-binary/MMKV.xcframework.zip",
+            checksum: "181709ac82514e7f243b338e2ac221c203741837e7f51e1922582d3f132d5b78"
         ),
         .testTarget(name: "MMKVTests", dependencies: ["MMKV"]),
     ]

@@ -10,6 +10,9 @@ import MMKV
 
 final class MMKVTests: XCTestCase {
     func testExample() throws {
-        let _ = MMKV.default()
+        MMKV.initialize(rootDir: nil)
+        let container = MMKV.default()!
+        container.set(Int64(1), forKey: "test")
+        XCTAssertEqual(container.int64(forKey: "test"), 1)
     }
 }
